@@ -1,0 +1,26 @@
+double Practicas(const Enviorement &T, int jugador, int profundidad, int &accion){
+	double max=menosinf;
+	if(profundidad==0){ // añadir 
+		return valoracionTest(T, jugador);
+	}
+	else{
+		int ultacc=-1;
+		int kk;
+		double valor;
+		Enviroment hijo=T.generateNextMove(ultacc);
+		while(ultacc<8){
+			valor=Practicar(hijo,jugador,profundidad-1,kk);
+			if(valor>max){
+				max=valor;
+				accion=ultacc;
+			}
+			hijo=T.generateNextMove(ultacc);
+		}
+		return max;
+	}
+
+}
+
+minmax hay que tener dos parametros con la profundidad (int profundidad, int limite) para alfa beta
+y añadir al primer if profundidad==limite.
+if(profundidad%2==0) si es par es max y se maximiza, sino es impar es min y se minimiza
