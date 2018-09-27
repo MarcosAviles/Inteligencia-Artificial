@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- regla 1 -->
+<category>
+<pattern>hola *</pattern>
+<template>
+<random>
+<li> Hola! </li>
+<li> Buenas! Que tal? </li>
+<li> Hola! Que tal? </li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>Piensa un personaje</pattern>
+<template>
+<think>
+<set var="lista_personas">Alejandro Alfonso Antonio Cristina Gabriela Ivan Javier Juan Laura Luis Marco Maria Paco Pepe Sofia Sonia</set>
+<set var="tam"><srai>COUNT <get var="lista_personas"/></srai></set>
+<set var="pos"><srai>RANDOM <get var="tam"/></srai></set>
+<set name="elegido"><srai> SELECTITEM <get var="pos"/> IN <get var="lista_personas"/></srai></set>
+<set name="pelo"><map name="pelo"><get name="elegido"/></map></set>
+<set name="ojos"><map name="ojos"><get name="elegido"/></map></set>
+<set name="piel"><map name="piel"><get name="elegido"/></map></set>
+<set name="gafas"><map name="gafas"><get name="elegido"/></map></set>
+<set name="bigote"><map name="bigote"><get name="elegido"/></map></set>
+<set name="barba"><map name="barba"><get name="elegido"/></map></set>
+<set name="genero"><map name="genero"><get name="elegido"/></map></set>
+</think>
+Ya lo he pensado.
+</template>
+</category>
+
+<!-- regla 2 -->
+<category>
+<pattern>Tiene el pelo *</pattern>
+<template>
+<condition name="pelo">
+    <li><value><star/></value>Si</li>
+    <li>No</li>
+</condition>
+</template>
+</category>
+
+<!-- regla 3 -->
+<category>
+<pattern>Tiene los ojos *</pattern>
+<template>
+<condition name="ojos">
+    <li><value><star/></value>Si</li>
+    <li>No</li>
+</condition>
+</template>
+</category>
+
+<!-- regla 4 -->
+<category>
+<pattern>Tiene la piel *</pattern>
+<template>
+<condition name="piel">
+    <li><value><star/></value>Si</li>
+    <li>No</li>
+</condition>
+</template>
+</category>
+
+<!-- regla 5 -->
+<category>
+<pattern>Tiene gafas</pattern>
+<template>
+    <get name="gafas"/>
+</template>
+</category>
+
+<!-- regla 6 -->
+<category>
+<pattern>Tiene bigote</pattern>
+<template>
+    <get name="bigote"/>
+</template>
+</category>
+
+<!-- regla 7 -->
+<category>
+<pattern>Tiene barba</pattern>
+<template>
+    <get name="barba"/>
+</template>
+</category>
+
+<!-- regla 8 -->
+<category>
+<pattern>Es *</pattern>
+<template>
+<condition name="genero">
+    <li><value><star/></value>Si</li>
+    <li>No</li>
+</condition>
+</template>
+</category>
+
+<!-- regla 9 -->
+<category>
+<pattern>El personaje es *</pattern>
+<template>
+<condition name="elegido">
+    <li><value><star/></value>Muy bien, lo has acertado</li>
+    <li>Lo siento te has esquivocado</li>
+</condition>
+</template>
+</category>
+
+</aiml>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<!-- regla 1 -->
+<category>
+<pattern>COMO APRUEBO IA</pattern>
+<template>Para aprobar la asignatura es necesario tener una calificacion numerica superior o igual a 5 (sobre 10). No obstante, ademas del requisito anterior, se establece como requisito adicional para superar la asignatura que tanto la calificacion correspondiente a la parte teorica como la correspondiente a la parte practica sean mayores o iguales a 3 (sobre 10).</template>
+</category>
+
+<!-- regla 2 -->
+<category>
+<pattern>COMO HAGO PARA APROBAR LA TEORIA</pattern>
+<template>Para la parte de teoria se realizara un examen final que se valorara sobre 10. Durante el curso se realizaran tres pruebas que conjuntamente podrian dar un maximo de 2 puntos sobre el examen final. La nota final de teoria seria el minimo entre 10 y la suma de la nota del examen con la nota obtenida en las pruebas parciales.</template>
+</category>
+
+<!-- regla 3 -->
+<category>
+<pattern>COMO CONSIGO SUPERAR LA PARTE PRACTICA</pattern>
+<template>Para la parte de practicas se tendra en cuenta la asistencia y participacion a las clases (esta parte constituye el 10% de la nota de practicas), y adicionalmente se realizaran tres practicas y un examen de problemas, la nota sera la media de estas cuatro pruebas (esta parte constituye el 90% de la nota de practicas). La parte de practicas se realiza por evaluacion continua y no se realizara un examen final.</template>
+</category>
+
+<!-- regla 4 -->
+<category>
+<pattern>COMO SE EVALUA EN LA CONVOCATORIA DE JUNIO</pattern>
+<template>La parte de teoria consta del 50% de la nota final de teoria, y de la parte practica consta del 50% de la nota final de practicas.</template>
+</category>
+
+<!-- regla 5 -->
+<category>
+<pattern>QUE PASA SI TENGO QUE PRESENTARME EN LA CONVOCATORIA DE SEPTIEMBRE</pattern>
+<template>En la convocatoria de septiembre habra un examen escrito unico (evaluado de 0 a 10) que incluira preguntas tanto de tipo teorico como practico que garanticen que el alumno ha adquirido la totalidad de las competencias descritas en la guia docente. No habra entrega de practicas en esta convocatoria.</template>
+</category>
+
+<!-- regla 6 -->
+<category>
+<pattern>HAY EXAMEN DE PRACTICAS EN LA CONVOCATORIA DE SEPTIEMBRE</pattern>
+<template>habra un examen escrito unico (evaluado de 0 a 10) que incluira preguntas tanto de tipo teorico como practico</template>
+</category>
+
+<!-- regla 7 -->
+<category>
+<pattern>QUE PASA SI NO PUEDO ASISTIR A CLASE REGULARMENTE</pattern>
+<template>En la parte practica si se evaluara la asistencia a clase<srai>EN LA PARTE TEORICA SE TIENE EN CUENTA LA ASISTENCIA</srai></template>
+</category>
+
+<!-- regla 8 -->
+<category>
+<pattern>HAY NOTA MINIMA PARA APROBAR</pattern>
+<template>se establece como requisito para superar la asignatura que tanto la calificacion correspondiente a la parte teorica como la correspondiente a la parte practica sean mayores o iguales a 3 (sobre 10).</template>
+</category>
+
+<!-- regla 9 -->
+<category>
+<pattern>LAS PRACTICAS SON OBLIGATORIAS</pattern>
+<template>Nada es obligatorio, puedes elegir que practicas hacer, (si estas obligado hacer algunas practicas si quieres aprobar)</template>
+</category>
+
+<!-- regla 10 -->
+<category>
+<pattern>CUANTO VALE CADA PRACTICA CON RESPECTO A LA NOTA FINAL</pattern>
+<template>Cada practica vale un 25%, teniendo en cuenta que la suma de las practicas es un 90% de la nota final de practicas.</template>
+</category>
+
+<!-- regla 11 -->
+<category>
+<pattern>CUANTO VALE LA PARTICIPACION CON RESPECTO A LA NOTA FINAL</pattern>
+<template>La asistencia y participacion en clase es un 10% de la nota final de practicas.</template>
+</category>
+
+<!-- regla 12 -->
+<category>
+<pattern>CUANTO VALE CADA GUION DE PRACTICAS CON RESPECTO A LA NOTA FINAL</pattern>
+<template>el guion de practicas no tiene valor, solo el trabajo realizado de la practica</template>
+</category>
+
+<!-- regla 13 -->
+<category>
+<pattern>COMO SE CONSIGUEN PUNTOS POR PARTICIPACION</pattern>
+<template>Realizando y participando en los ejercicios planteados y propuestos por el profesor.</template>
+</category>
+
+<!-- regla 14 -->
+<category>
+<pattern>QUE ES LO MINIMO QUE NECESITO PARA APROBAR LA ASIGNATURA</pattern>
+<template>Para superar la asignatura la calificacion correspondiente a la parte teorica como la correspondiente a la parte practica sean mayores o iguales a 3 (sobre 10), cuya suma de ambas sea igual o superior a 5.</template>
+</category>
+
+<!-- regla 15 -->
+<category>
+<pattern>LOS TRABAJOS SON INDIVIDUALES</pattern>
+<template>Las practicas son INDIVIDUALES.</template>
+</category>
+
+<!-- regla 16 -->
+<category>
+<pattern>SE PUEDEN HACER LOS TRABAJOS EN GRUPO</pattern>
+<template><srai>LOS TRABAJOS SON INDIVIDUALES</srai></template>
+</category>
+
+<!-- regla 17 -->
+<category>
+<pattern>HAY QUE ENTREGAR LOS EJERCICIOS DE LAS RELACIONES DE PROBLEMAS</pattern>
+<template>La entrega de ejercicios no son obligatorios, pero forma parte de la nota de la evaluacion continua</template>
+</category>
+
+<!-- regla 18 -->
+<category>
+<pattern>POR QUE TENGO QUE ESTUDIAR</pattern>
+<template>Supongo que esta pregunta deberias saberla, sino no estarias aqui</template>
+</category>
+
+<!-- regla 19 -->
+<category>
+<pattern>CUANTO VALE EL PRIMER EXAMEN DE TEORIA</pattern>
+<template>El primer parcial obtiene la calificacion de 0.5 puntos sobre el examen final.</template>
+</category>
+
+<!-- regla 20 -->
+<category>
+<pattern>PUEDO TENER UNA NOTA MAYOR A 10</pattern>
+<template>En decimal no puedes obtar por mas de 10 pero en octal si</template>
+</category>
+
+<!-- regla 21 -->
+<category>
+<pattern>PUEDO RECUPERAR UNA PRACTICA O EXAMEN</pattern>
+<template>Lo siento, no puedes recuperar ninguna practica o examen. En caso de suspender tienes la convocatoria de septiembre.
+</template>
+</category>
+
+<!-- regla 22 -->
+<category>
+<pattern>QUE PASA SI ME COPIO DE OTRO ESTUDIANTE</pattern>
+<template>Tiene la misma penalizacion el que copia como el que se deja copiar.</template>
+</category>
+
+<!-- regla 23 -->
+<category>
+<pattern>QUE PASA SI ME DEJO COPIAR DE OTRO ESTUDIANTE</pattern>
+<template>Los alumnos asociados con las practicas que se detecten copiadas, ya sea durante el proceso de deteccion de copia o durante la defensa de la practica tendran automaticamente suspensa la asignatura y deberan presentarse a la convocatoria de septiembre.</template>
+</category>
+
+<!-- regla 24 -->
+<category>
+<pattern>Y SI SUSPENDO EN LA CONVOCATORIA DE JUNIO</pattern>
+<template>Vas a septiembre y <srai>QUE PASA SI TENGO QUE PRESENTARME EN LA CONVOCATORIA DE SEPTIEMBRE</srai></template>
+</category>
+
+<!-- regla 25 -->
+<category>
+<pattern>CUANTO VALE LA PRACTICA Y LA TEORIA</pattern>
+<template><srai>COMO SE EVALUA EN LA CONVOCATORIA DE JUNIO</srai></template>
+</category>
+
+<!-- regla 26 -->
+<category>
+<pattern>CUAL ES EL HORARIO DE TUTORIAS DEL PROFESOR DE PRACTICAS</pattern>
+<template>El horario es: Lunes de 10:00 a 13:30 en D23 (ETSIIT) Martes de 10:00 a 11:30 en D23 (ETSIIT) Miercoles de 17:00 a 18:00 en D23 (ETSIIT))</template>
+</category>
+
+<!-- regla 27 -->
+<category>
+<pattern>CUAL ES EL CORREO ELECTRONICO DEL PROFESOR DE TEORIA</pattern>
+<template>fgr@decsai.ugr.es</template>
+</category>
+
+<!-- regla 28 -->
+<category>
+<pattern>SE PUEDE APROBAR LA PARTE PRACTICA DE LA ASIGNATURA SI NO PRESENTO UNA PRACTICA</pattern>
+<template>La nota de practica siempre sera la suma de todo tu trabajo realizado. Por lo que si superas el minimo de 3 puntos sobre 10, puedes dar por superada la parte practica.
+</template>
+</category>
+
+<!-- regla 29 -->
+<category>
+<pattern>CUAL ES LA NOTA MINIMA QUE TENGO QUE OBTENER EN CADA PARTE PARA HACER MEDIA</pattern>
+<template><srai>QUE ES LO MINIMO QUE NECESITO PARA APROBAR LA ASIGNATURA</srai></template>
+</category>
+
+<!-- regla 30 -->
+<category>
+<pattern>QUE PUNTUACION OBTENGO EN LA PRACTICA 1 SI OPTO POR DEFENDER EL NIVEL 3 Y NO LO SUPERO</pattern>
+<template>Si el funcionamiento es correcto, el alumno obtendra una calificacion de entre 9 y 10 dependiendo de la via de solucion adoptada para resolver las dos caracteristicas que se piden. Si el sistema realiza preguntas no inteligentes o no es capaz de detectar la trampa del humano, el alumno obtendra una calificacion de 6.</template>
+</category>
+
+<!-- regla 31 -->
+<category>
+<pattern>PUEDO ENTREGAR LA PRACTICA 1 SIN HACER LA TAREA RELATIVA AL NIVEL 0</pattern>
+<template>Puedes entregar lo que quieras, pero tu nota sera 0</template>
+</category>
+
+<!-- regla 32 -->
+<category>
+<pattern>QUE TENGO QUE HACER SI NO PUEDO ASISTIR A LA SESION DE PRACTICAS EN LA QUE ME CORRESPONDE HACER LA DEFENSA DE MI PRACTICA *</pattern>
+<template>Si por algun motivo, el alumno no pudiera asistir a su sesion esa semana, debe avisar al profesor de practicas para que le asigne a otro grupo de practicas de la asignatura para esa misma semana.</template>
+</category>
+
+<!-- regla 33 -->
+<category>
+<pattern>CUANTAS PRUEBAS TEORICAS TENDRE A LO LARGO DEL CURSO</pattern>
+<template>Consta de 3 parciales teoricos y el examen final</template>
+</category>
+
+<!-- regla 34 -->
+<category>
+<pattern>QUE VALE LA PRIMERA PRUEBA TEORICA</pattern>
+<template><srai>CUANTO VALE EL PRIMER EXAMEN DE TEORIA</srai></template>
+</category>
+
+<!-- regla 35 -->
+<category>
+<pattern>EN LA PARTE TEORICA SE TIENE EN CUENTA LA ASISTENCIA</pattern>
+<template>La asistencia a las clases teoricas no sera obligatoria, aunque la entrega de pruebas planteadas por el profesor se tendra en cuenta dentro del sistema de evaluacion de la asignatura. Se tendra en cuenta la asistencia y participacion a las clases (esta parte constituye el 10% de la nota de practicas).</template>
+</category>
+
+<!-- regla 36 -->
+<category>
+<pattern>EN QUE CONSISTE EL EXAMEN DE EJERCICIOS</pattern>
+<template>Consta de resolver algunos problemas realizados en clase y consta del 22.5% de la nota final de practicas.
+</template>
+</category>
+
+<!-- regla 37 -->
+<category>
+<pattern>QUE OCURRE SI NO QUIERO DEFENDER UNA PRACTICA</pattern>
+<template><srai>QUE TENGO QUE HACER SI NO PUEDO ASISTIR A LA SESION DE PRACTICAS EN LA QUE ME CORRESPONDE HACER LA DEFENSA DE MI PRACTICA *</srai></template>
+</category>
+
+<!-- regla 38 -->
+<category>
+<pattern>QUE DEBERIA HACER SI NO ESTOY SEGURO DE PODER SUPERAR EL NIVEL 3 DE LA PRACTICA *</pattern>
+<template>El mejor consejo es que lo intentes, sino puedes superar tan solo el nivel 2 que puedes llegar hasta 8 puntos</template>
+</category>
+
+<!-- regla 39 -->
+<category>
+<pattern>CUANTAS PRACTICAS ENTREGABLES TIENE LA ASIGNATURA</pattern>
+<template>3 practicas</template>
+</category>
+
+<!-- regla 40 -->
+<category>
+<pattern>YO PROGRAMO MUY BIEN EN C++, PODRIA HACER LAS PRACTICAS EN ESE LENGUAJE</pattern>
+<template>No, al menos esta primera practica.</template>
+</category>
+
+<!-- regla 41 -->
+<category>
+<pattern>ODIO AIML, PODRIA HACER LAS PRACTICAS CON OTRO LENGUAJE</pattern>
+<template>Posiblemente haya mas lenguajes de conocimiento, pero en esta asignatura vamos a utilizar este lenguaje en practicas</template>
+</category>
+
+<!-- regla 42 -->
+<category>
+<pattern>DONDE ESTA LA OFICINA DEL PROFESOR DE PRACTICAS</pattern>
+<template>Despacho D23 (ETSIIT)</template>
+</category>
+
+<!-- regla 43 -->
+<category>
+<pattern>DONDE ESTA EL DESPACHO DEL PROFESOR DE TEORIA</pattern>
+<template>Despacho D24 (Cuarta Planta ETSIIT)</template>
+</category>
+
+<!-- regla 44 -->
+<category>
+<pattern>SUMO 15 PUNTOS EN LAS PRACTICAS QUE YA HE HECHO, ESO ME ASEGURA APROBAR LAS PRACTICAS</pattern>
+<template>Puedes considerar superada la parte practica. (3.375)</template>
+</category>
+
+<!-- regla 45 -->
+<category>
+<pattern>SUMO 20 PUNTOS EN LAS PRACTICAS QUE YA HE HECHO, ESO ME ASEGURA APROBAR LA ASIGNATURA</pattern>
+<template>Debes de cumplir con el requisito minimo de teoria para garantizar el aprobado de la asignatura. (4.5 en la parte practica)</template>
+</category>
+
+<!-- regla 46 -->
+<category>
+<pattern>ME INCORPORE TARDE A LA ASIGNATURA Y NO PUDE HACER LA PRACTICA * PUEDO RECUPERAR ESA PRACTICA</pattern>
+<template>No es recuperable, pero tienes la opcion de seguir realizando las siguiente/s practica/s</template>
+</category>
+
+<!-- regla 47 -->
+<category>
+<pattern>ME INCORPORE TARDE A LA ASIGNATURA Y NO PUDE HACER LA PRACTICA * TENGO POSIBILIDADES DE APROBAR LA PARTE PRACTICA</pattern>
+<template><srai>ME INCORPORE TARDE A LA ASIGNATURA Y NO PUDE HACER LA PRACTICA * PUEDO RECUPERAR ESA PRACTICA</srai></template>
+</category>
+
+<!-- regla 48 -->
+<category>
+<pattern>ME ENCANTAN LOS AGENTES CONVERSACIONALES Y SOY UN EXPERTO EN SU CONSTRUCCION, PODRIA USAR AGENTES CONVERSACIONALES PARA QUE VAYAN EN MI LUGAR A HACER LA DEFENSA DE PRACTICAS</pattern>
+<template>No</template>
+</category>
+
+<!-- regla 49 -->
+<category>
+<pattern>EN LAS SIGUIENTES PRACTICAS HAY TAMBIEN QUE PROGRAMAR</pattern>
+<template>Por suerte o no, si!</template>
+</category>
+
+<!-- regla 50 -->
+<category>
+<pattern>EL NIVEL 0 ES MUY FACIL, EL RESTO DE LA PRACTICA SE COMPLICA MUCHO</pattern>
+<template>Depende de la capacidad de cada alumno, y del tiempo que le dedique</template>
+</category>
+
+
+</aiml>
+
+
